@@ -1,0 +1,8 @@
+have ordered the components
+
+1)  Adriono uno board
+2)  bluetooth module
+3)  Ethernet shield 
+ 
+searching on how to connect adrino with bluetooth 
+and Ethernet shield to connect with computer 
