@@ -1,0 +1,17 @@
+
+  Notes on 06 Nov 2015
+  
+  Muhammad suffyian
+
+  Bluetooth test
+
+1) power up ardriuno board.
+2) connect bluetooth module .
+3) connect Led 
+4) download App on your mobile to connect to bluetooth
+5) pair it with the module HC 06
+6) Download code for led bluetooth test on ardriuno board via usb cable
+7) send data to control led
+
+conclusion
+it means bluetooth module is working and can be controlled by app. 
