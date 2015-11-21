@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#ff5d1751">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000003"
+        android:text="Cricket ScoreBoard"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Team"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Team"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Score" />
+
+    <Button android:id="@+id/btnAdd2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Target"/>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff010002"
+        android:text="Match"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+    <TextView android:id="@+id/txtResult2" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="#ff010002" android:text="Match" android:textColor="#ffffffff"
+              android:textSize="30sp"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:background="#ff402e07"/>
+
+</LinearLayout>
