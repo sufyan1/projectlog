@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#ff5d1751">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff000003"
+        android:text="Cricket ScoreBoard"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+    <TextView android:id="@+id/teams" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="#ff010002" android:text="Match" android:textColor="#ffffffff"
+              android:textSize="30sp"/>
+    <TextView android:id="@+id/toss" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="#ff010002" android:text="Toss" android:textColor="#ffffffff"
+              android:textSize="30sp"/>
+    <Button android:id="@+id/buttonteams" android:layout_width="170dp" android:layout_height="wrap_content"
+            android:text="Teams"/>
+    <Button android:id="@+id/toss2" android:layout_width="170dp" android:layout_height="wrap_content"
+            android:text="Toss"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Update Score" />
+
+    <Button android:id="@+id/btnAdd2" android:layout_width="170dp" android:layout_height="wrap_content"
+            android:text="Target"/>
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff010002"
+        android:text="Scores"
+        android:textColor="#ffffffff"
+        android:textSize="30sp" />
+
+    <TextView android:id="@+id/txtResult2" android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:background="#ff010002" android:text="Target" android:textColor="#ffffffff"
+              android:textSize="30sp"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:background="#ff402e07"/>
+
+</LinearLayout>
