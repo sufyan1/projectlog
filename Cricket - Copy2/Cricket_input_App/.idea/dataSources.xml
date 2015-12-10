@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2555385933">
-    <data-source source="LOCAL" name="SQLite -" uuid="1406bf62-1987-404c-ac85-e6a43cae32ae">
+  <component name="DataSourceManagerImpl" format="xml" hash="2237284388">
+    <data-source source="LOCAL" name="SQLite -" uuid="8df259c9-ea60-4019-baec-6a4a348bdaef">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../../../../myfriendsDB2new</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/../../../../../myDB1.db</jdbc-url>
       <libraries />
     </data-source>
   </component>

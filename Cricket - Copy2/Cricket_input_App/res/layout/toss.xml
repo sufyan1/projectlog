@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"  android:background="#fffffc02">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:weightSum="1" android:layout_gravity="center_horizontal">
+        <TextView android:id="@+id/tossteam" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="#ff010002" android:textColor="#ffffffff"
+                  android:textSize="30sp" android:text="Toss"/>
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tosst"
+                  android:layout_weight="0.06" android:hint="Team won toss" android:inputType="text"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter"
+                android:id="@+id/Enter" android:layout_weight="0.06"/>
+        <Button android:layout_width="173dp" android:layout_height="wrap_content" android:text="Bowl"
+                android:id="@+id/btnbowl"/>
+        <Button android:layout_width="170dp" android:layout_height="wrap_content" android:text="Bat"
+                android:id="@+id/btnbat"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Scoreboard Updated" android:id="@+id/tossupdate" android:layout_weight="0.06"/>
+    </LinearLayout>
+</LinearLayout>
