@@ -7,7 +7,7 @@
               tools:context="com.easyway2in.mysqlconnect.Register"
               android:orientation="vertical"
               android:background="#0BB990"
-        >
+              android:weightSum="1">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="Team"
             android:id="@+id/name"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
@@ -28,7 +28,7 @@
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="User Name"
+            android:hint="Score"
             android:id="@+id/new_user_name"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
@@ -36,16 +36,19 @@
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Wickets"
             android:id="@+id/new_user_pass"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:inputType="textPassword"
             />
+    <EditText android:layout_width="251dp" android:layout_height="wrap_content" android:hint="Toss"
+              android:id="@+id/toss_text" android:layout_marginTop="20dp"
+              android:inputType="textPassword" android:layout_gravity="center_horizontal" android:layout_weight="0.14"/>
     <Button
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="Upload"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:onClick="userReg"
