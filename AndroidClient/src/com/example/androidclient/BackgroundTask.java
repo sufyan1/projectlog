@@ -42,8 +42,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String method = params[0];
         if (method.equals("register")) {
             String name = params[1];
-            String user_name = params[2];
-            String user_pass = params[3];
+            String team_score = params[2];
+            String team_wickets = params[3];
             String Get_overs = params[4];
             try {
                 URL url = new URL(reg_url);
@@ -54,8 +54,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
                 String data = URLEncoder.encode("user", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
-                        URLEncoder.encode("user_name", "UTF-8") + "=" + URLEncoder.encode(user_name, "UTF-8") + "&" +
-                        URLEncoder.encode("user_pass", "UTF-8") + "=" + URLEncoder.encode(user_pass, "UTF-8") + "&" +
+                        URLEncoder.encode("team_score", "UTF-8") + "=" + URLEncoder.encode(team_score, "UTF-8") + "&" +
+                        URLEncoder.encode("team_wickets", "UTF-8") + "=" + URLEncoder.encode(team_wickets, "UTF-8") + "&" +
                         URLEncoder.encode("Get_overs", "UTF-8") + "=" + URLEncoder.encode(Get_overs, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();

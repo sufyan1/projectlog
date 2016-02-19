@@ -11,7 +11,7 @@ import android.widget.EditText;
  */
 public class Register  extends Activity {
     EditText Batting_team,Score, Wickets,Toss;
-    String name,user_name,user_pass,Get_overs;
+    String name,team_score,team_wickets,Get_overs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +27,12 @@ public class Register  extends Activity {
     public void userReg(View view)
     {
         name = Batting_team.getText().toString();
-        user_name =  Score.getText().toString();
-        user_pass =  Wickets.getText().toString();
+        team_score =  Score.getText().toString();
+        team_wickets =  Wickets.getText().toString();
         Get_overs = Toss.getText().toString();
         String method = "register";
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,name,user_name,user_pass,Get_overs);
+        backgroundTask.execute(method,name,team_score,team_wickets,Get_overs);
     }
 
 
