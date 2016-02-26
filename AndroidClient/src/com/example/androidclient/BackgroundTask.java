@@ -38,6 +38,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
      //   String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
      //   String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
        String reg_url = "http://10.0.3.2/webapp/register.php";
+        String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //for reg2 php
            String login_url = "http://10.0.3.2/webapp/login.php";
         String method = params[0];
         if (method.equals("register")) {
@@ -73,19 +74,28 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             }
         }
         else if (method.equals("reg2")) {
-            String team1 = params[1];
-            String team2 = params[2];
+            String Match_Number = params[1];
+            String team1 = params[2];
+            String team2 = params[3];
+            String toss = params[4];
+            String bat = params[5];
+            String bowl = params[6];
+
 
             try {
-                URL url = new URL(reg_url);
+                URL url = new URL(reg2_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
                 //httpURLConnection.setDoInput(true);
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                String data = URLEncoder.encode("team1", "UTF-8") + "=" + URLEncoder.encode(team1, "UTF-8") + "&" +
-                        URLEncoder.encode("team2", "UTF-8") + "=" + URLEncoder.encode(team2, "UTF-8");
+                String data = URLEncoder.encode("Match_Number", "UTF-8") + "=" + URLEncoder.encode(Match_Number, "UTF-8") + "&" +
+                        URLEncoder.encode("team1", "UTF-8") + "=" + URLEncoder.encode(team1, "UTF-8") + "&" +
+                        URLEncoder.encode("team2", "UTF-8") + "=" + URLEncoder.encode(team2, "UTF-8") + "&" +
+                        URLEncoder.encode("toss", "UTF-8") + "=" + URLEncoder.encode(toss, "UTF-8") + "&" +
+                        URLEncoder.encode("batting", "UTF-8") + "=" + URLEncoder.encode(bat, "UTF-8") + "&" +
+                        URLEncoder.encode("bowling", "UTF-8") + "=" + URLEncoder.encode(bowl, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
