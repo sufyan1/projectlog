@@ -12,7 +12,7 @@ package com.example.androidclient;
 		import android.widget.EditText;
 public class MainActivity extends Activity{
 	EditText ET_NAME,ET_PASS;
-	String login_name,login_pass;
+	String Bat,Score;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,10 +30,10 @@ public class MainActivity extends Activity{
 	}
 	public void userLogin(View view)
 	{
-		login_name = ET_NAME.getText().toString();
-		login_pass = ET_PASS.getText().toString();
+		Bat = ET_NAME.getText().toString();
+		Score = ET_PASS.getText().toString();
 		String method = "login";
 		BackgroundTask backgroundTask = new BackgroundTask(this);
-		backgroundTask.execute(method,login_name,login_pass);
+		backgroundTask.execute(method,Bat,Score);
 	}
 }

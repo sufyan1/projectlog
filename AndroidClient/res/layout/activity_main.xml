@@ -11,7 +11,7 @@
 <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Form"
+        android:text="Cricket Scoreboard"
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
@@ -20,7 +20,7 @@
 <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="User Name"
+        android:hint="batting team"
         android:id="@+id/user_name"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
@@ -28,7 +28,7 @@
 <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="score"
         android:id="@+id/user_pass"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -37,7 +37,7 @@
 <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="live scores"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:onClick="userLogin"
