@@ -21,12 +21,9 @@ public class MatchDetails  extends Activity {
         Toss=(EditText)findViewById(R.id.toss);
         bat_first=(EditText)findViewById(R.id.bat);
         bowl_first=(EditText)findViewById(R.id.bowl);
-
-
+        
     }
-
-
-
+    // for match details
     public void userReg2(View view)
     {
         M_number =  Match_number.getText().toString();
