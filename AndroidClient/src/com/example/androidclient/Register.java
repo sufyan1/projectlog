@@ -27,6 +27,10 @@ public class Register  extends Activity {
     {
         startActivity(new Intent(this,Current_BB.class));
     }
+    public void userReg2(View view)
+    {
+        startActivity(new Intent(this,MatchDetails.class));
+    }
 
     public void userReg(View view)
     {

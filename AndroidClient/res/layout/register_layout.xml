@@ -38,6 +38,9 @@
     <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Upload"
             android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="C_batsman"
             android:id="@+id/upload" android:hint="batsman on crease"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Match Details"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="50dp" android:onClick="userReg2"
+            android:id="@+id/button2"/>
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"

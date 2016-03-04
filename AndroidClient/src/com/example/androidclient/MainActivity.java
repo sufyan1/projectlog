@@ -24,10 +24,7 @@ public class MainActivity extends Activity{
 	{
 		startActivity(new Intent(this,Register.class));
 	}
-	public void userReg2(View view)
-	{
-		startActivity(new Intent(this,MatchDetails.class));
-	}
+
 	public void userLogin(View view)
 	{
 		Bat = ET_NAME.getText().toString();
