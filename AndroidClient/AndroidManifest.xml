@@ -35,7 +35,12 @@
 
         </activity>
         <activity
-                android:name=".Current_BB"
+            android:name=".Current_BB"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+    </activity>
+        <activity
+                android:name=".Scoreupdate"
                 android:theme="@android:style/Theme.Translucent.NoTitleBar" >
 
         </activity>
