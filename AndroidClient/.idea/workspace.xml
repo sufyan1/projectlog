@@ -78,6 +78,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="match.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/match.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/androidclient/Register.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scoreupdate.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Scoreupdate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/androidclient/Scoreupdate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.48195878">
               <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,18 +128,6 @@
               <folding>
                 <element signature="e#484#502#0" expanded="true" />
                 <element signature="e#655#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Current_BB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/androidclient/Current_BB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +156,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_layout.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register_layout.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/register_layout.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
@@ -199,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/match.xml" />
         <option value="$PROJECT_DIR$/src/com/example/androidclient/MatchDetails.java" />
         <option value="$PROJECT_DIR$/res/layout/current.xml" />
         <option value="$PROJECT_DIR$/src/com/example/androidclient/Current_BB.java" />
@@ -211,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/com/example/androidclient/Scoreupdate.java" />
         <option value="$PROJECT_DIR$/res/layout/scoreupdate.xml" />
         <option value="$PROJECT_DIR$/res/layout/register_layout.xml" />
+        <option value="$PROJECT_DIR$/res/layout/match.xml" />
       </list>
     </option>
   </component>
@@ -653,16 +654,16 @@
       <workItem from="1455889926109" duration="10976000" />
       <workItem from="1456445504350" duration="10537000" />
       <workItem from="1456878969145" duration="1726000" />
-      <workItem from="1456919407626" duration="20059000" />
+      <workItem from="1456919407626" duration="20810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72713000" />
+    <option name="totallyTimeSpent" value="73464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1156,17 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/match.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/current.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1249,16 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/androidclient/Scoreupdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/scoreupdate.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1278,6 +1258,27 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/match.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/androidclient/Scoreupdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48195878">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
