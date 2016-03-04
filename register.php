@@ -7,8 +7,10 @@
  //$team1 =$_POST["team1"];  
  //$team2 =$_POST["team2"];  
  
- $sql_query = "insert into user_info values('$name','$team_score','$team_wickets','$Get_overs');";  
- //$sql_query = "insert into teams values('$team1','$team2');"; 
+ //$sql_query = "insert into user_info values('$name','$team_score','$team_wickets','$Get_overs');";  
+ $sql_query = "UPDATE user_info SET Overs='$Get_overs',Batting_Team='$name'
+ ,Scores='$team_score',Wickets='$team_wickets'WHERE Overs=200;"; 
+ 
  if(mysqli_query($con,$sql_query))  
   
  {  

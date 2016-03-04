@@ -20,11 +20,13 @@
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Team"
-            android:id="@+id/name"
+            android:hint="Match id"
+            android:id="@+id/id"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             />
+    <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Team"
+              android:id="@+id/name" android:layout_gravity="center_horizontal" android:layout_marginTop="40dp"/>
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -33,6 +35,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             />
+    <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Upload"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="C_batsman"
+            android:id="@+id/upload" android:hint="batsman on crease"/>
     <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -42,15 +47,15 @@
             android:layout_marginTop="20dp"
             android:inputType="textPassword"
             />
-    <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="overs"
-              android:id="@+id/toss_text" android:layout_marginTop="20dp"
-              android:inputType="textPassword" android:layout_gravity="center_horizontal"/>
     <Button
-            android:layout_width="130dp"
+            android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:text="Upload"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
             android:onClick="userReg"
             />
+    <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="overs"
+              android:id="@+id/toss_text" android:layout_marginTop="20dp"
+              android:inputType="textPassword"/>
 </LinearLayout>
