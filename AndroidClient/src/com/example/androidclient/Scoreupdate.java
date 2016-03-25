@@ -9,8 +9,8 @@ import android.widget.EditText;
  * Created by Sufyan on 3/4/2016.
  */
 public class Scoreupdate extends Activity{
-    EditText Batting_team,Score, Wickets,Toss,id_num;
-    String name,team_score,team_wickets,Get_overs,Match_id;
+    EditText Batting_team,Score, Wickets,Toss,id_num,Total_overs;
+    String name,team_score,team_wickets,Get_overs,Match_id,Totalovers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,7 @@ public class Scoreupdate extends Activity{
         Score = (EditText)findViewById(R.id.new_user_name);
         Wickets = (EditText)findViewById(R.id.new_user_pass);
         Toss = (EditText)findViewById(R.id.toss_text);
+        Total_overs = (EditText)findViewById(R.id.t);
     }
     public void userReg(View view)
     {
@@ -28,8 +29,9 @@ public class Scoreupdate extends Activity{
         team_score =  Score.getText().toString();
         team_wickets =  Wickets.getText().toString();
         Get_overs = Toss.getText().toString();
+        Totalovers =  Total_overs.getText().toString();
         String method = "register";
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,Match_id,name,team_score,team_wickets,Get_overs);
+        backgroundTask.execute(method,Match_id,name,team_score,team_wickets,Get_overs,Totalovers);
     }
 }

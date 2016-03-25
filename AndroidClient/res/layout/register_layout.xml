@@ -26,12 +26,12 @@
             android:layout_marginTop="40dp"
             />
     <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Match Details"
-            android:layout_gravity="center_horizontal" android:layout_marginTop="50dp" android:onClick="userReg2"
-            android:id="@+id/button2"/>
+            android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="userReg2"
+            android:id="@+id/button2" android:layout_weight="0.03"/>
     <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="score"
             android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="Score"
             android:id="@+id/score" android:hint="batsman on crease"/>
-    <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Upload"
+    <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Batsman on Strike"
             android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="C_batsman"
             android:id="@+id/upload" android:hint="batsman on crease"/>
 </LinearLayout>

@@ -21,6 +21,7 @@ public class MatchDetails  extends Activity {
         Toss=(EditText)findViewById(R.id.toss);
         bat_first=(EditText)findViewById(R.id.bat);
         bowl_first=(EditText)findViewById(R.id.bowl);
+
         
     }
     // for match details
@@ -32,6 +33,7 @@ public class MatchDetails  extends Activity {
         toss = Toss.getText().toString();
         Bat =   bat_first.getText().toString();
         Bowl = bowl_first.getText().toString();
+
 
         String method = "reg2";
         BackgroundTask backgroundTask = new BackgroundTask(this);

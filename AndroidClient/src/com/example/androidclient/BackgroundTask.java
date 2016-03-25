@@ -48,6 +48,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             String team_score = params[3];
             String team_wickets = params[4];
             String Get_overs = params[5];
+            String Totalovers = params[6];
             try {
                 URL url = new URL(reg_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -60,7 +61,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         URLEncoder.encode("user", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
                         URLEncoder.encode("team_score", "UTF-8") + "=" + URLEncoder.encode(team_score, "UTF-8") + "&" +
                         URLEncoder.encode("team_wickets", "UTF-8") + "=" + URLEncoder.encode(team_wickets, "UTF-8") + "&" +
-                        URLEncoder.encode("Get_overs", "UTF-8") + "=" + URLEncoder.encode(Get_overs, "UTF-8");
+                        URLEncoder.encode("Get_overs", "UTF-8") + "=" + URLEncoder.encode(Get_overs, "UTF-8") + "&" +
+                URLEncoder.encode("Totalovers", "UTF-8") + "=" + URLEncoder.encode(Totalovers, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -85,6 +87,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             String bowl = params[6];
 
 
+
             try {
                 URL url = new URL(reg2_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -99,6 +102,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                         URLEncoder.encode("toss", "UTF-8") + "=" + URLEncoder.encode(toss, "UTF-8") + "&" +
                         URLEncoder.encode("batting", "UTF-8") + "=" + URLEncoder.encode(bat, "UTF-8") + "&" +
                         URLEncoder.encode("bowling", "UTF-8") + "=" + URLEncoder.encode(bowl, "UTF-8");
+
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
