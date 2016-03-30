@@ -17,32 +17,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         />
-<EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="batting team"
-        android:id="@+id/user_name"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
-        />
-<EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="score"
-        android:id="@+id/user_pass"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:inputType="textPassword"
-        />
-<Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="live scores"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:onClick="userLogin"
-        />
-<Button
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload Scores"
