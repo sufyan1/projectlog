@@ -31,7 +31,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected void onPreExecute() {
         alertDialog = new AlertDialog.Builder(ctx).create();
-        alertDialog.setTitle("Login Information....");
+        alertDialog.setTitle("Uploading Information....");
     }
     @Override
     protected String doInBackground(String... params) {
@@ -71,7 +71,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 IS.close();
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
-                return "Registration Success...";
+                return "Scores has been Registered successfully";
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -111,7 +111,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 IS.close();
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
-                return "Registration Success...";
+                return "Match Details Uploaded";
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -144,7 +144,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 IS.close();
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
-                return "Registration Success...";
+                return "Batsman at Crease and Bowler Bowling Updated";
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
