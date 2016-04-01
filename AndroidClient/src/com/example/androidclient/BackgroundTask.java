@@ -81,7 +81,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             }
         }
         else if (method.equals("reg2")) {
-            String Match_Number = params[1];
+            String id = params[1];
             String team1 = params[2];
             String team2 = params[3];
             String toss = params[4];
@@ -99,7 +99,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 //httpURLConnection.setDoInput(true);
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                String data = URLEncoder.encode("Match_Number", "UTF-8") + "=" + URLEncoder.encode(Match_Number, "UTF-8") + "&" +
+                String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
                         URLEncoder.encode("team1", "UTF-8") + "=" + URLEncoder.encode(team1, "UTF-8") + "&" +
                         URLEncoder.encode("team2", "UTF-8") + "=" + URLEncoder.encode(team2, "UTF-8") + "&" +
                         URLEncoder.encode("toss", "UTF-8") + "=" + URLEncoder.encode(toss, "UTF-8") + "&" +
