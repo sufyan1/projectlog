@@ -14,6 +14,8 @@
                   android:background="#0BB990" android:weightSum="1" android:layout_gravity="center_horizontal">
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Match id"
                   android:id="@+id/id" android:layout_marginTop="20dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Update Type"
+                  android:id="@+id/type" android:layout_marginTop="20dp"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="batsman"
                   android:id="@+id/bat" android:layout_gravity="center_horizontal" android:layout_marginTop="40dp"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="bowler"

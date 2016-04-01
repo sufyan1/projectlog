@@ -122,6 +122,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             String id = params[1];
             String bat = params[2];
             String bowl = params[3];
+            String type = params[4];
 
 
 
@@ -135,7 +136,8 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
                 String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
                         URLEncoder.encode("bat", "UTF-8") + "=" + URLEncoder.encode(bat, "UTF-8") + "&" +
-                        URLEncoder.encode("bowl", "UTF-8") + "=" + URLEncoder.encode(bowl, "UTF-8");
+                        URLEncoder.encode("bowl", "UTF-8") + "=" + URLEncoder.encode(bowl, "UTF-8") + "&" +
+                        URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8");
                 bufferedWriter.write(data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
