@@ -29,7 +29,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected void onPreExecute() {
         alertDialog = new AlertDialog.Builder(ctx).create();
-        alertDialog.setTitle("Login Information....");
+        alertDialog.setTitle("Match Stats...");
     }
     @Override
     protected String doInBackground(String... params) {

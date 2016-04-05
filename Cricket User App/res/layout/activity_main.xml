@@ -11,13 +11,16 @@
 <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cricket Scoreboard"
+        android:text="Cricket Live Scores"
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         />
-<EditText
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type Match ID followed By Respective Button for Stats"
+              android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
+              android:layout_marginTop="30dp" android:id="@+id/textView"/>
+    <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="Enter Match ID "
