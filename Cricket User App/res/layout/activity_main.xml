@@ -25,12 +25,18 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
         />
-        <Button
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Match Summay"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="matchLogin"
+            android:id="@+id/m_d"/>
+    <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="live scores"
+        android:text="Live scores"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:onClick="userLogin"
         />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current Batsman and Bowler"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Current"
+            android:id="@+id/button"/>
 </LinearLayout>
