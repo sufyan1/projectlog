@@ -36,9 +36,14 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
      //   String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
      //   String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
      //  String reg_url = "http://10.0.3.2/webapp/register.php";
-        String Match_details = "http://10.0.3.2/webapp/Match_details.php"; //for reg2 php
-        String login_url = "http://10.0.3.2/webapp/login.php";
-        String At_Crease = "http://10.0.3.2/webapp/At_Crease.php";
+     //*******************//
+        String Match_details = "http://192.168.0.7/webapp/Match_details.php"; //home ip address
+        String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
+        String At_Crease = "http://192.168.0.7/webapp/At_Crease.php";//home ip address
+        //***************************************************//
+   //     String Match_details = "http://10.0.3.2/webapp/Match_details.php"; //for reg2 php
+    //    String login_url = "http://10.0.3.2/webapp/login.php";
+    //    String At_Crease = "http://10.0.3.2/webapp/At_Crease.php";
         String method = params[0];
 
         if(method.equals("login"))

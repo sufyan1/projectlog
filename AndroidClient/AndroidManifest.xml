@@ -44,6 +44,11 @@
                 android:theme="@android:style/Theme.Translucent.NoTitleBar" >
 
         </activity>
+        <activity
+                android:name=".Teams"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+        </activity>
     </application>
 
 </manifest>

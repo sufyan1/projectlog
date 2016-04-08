@@ -29,6 +29,10 @@ public class Register  extends Activity {
     {
         startActivity(new Intent(this,Scoreupdate.class));
     }
+    public void Teams(View view)
+    {
+        startActivity(new Intent(this,Teams.class));
+    }
 
 
 

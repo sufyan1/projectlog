@@ -35,12 +35,18 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     }
     @Override
     protected String doInBackground(String... params) {
-     //   String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
-     //   String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
-       String reg_url = "http://10.0.3.2/webapp/register.php";
-        String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //for reg2 php
-           String login_url = "http://10.0.3.2/webapp/login.php";
-        String bat_url = "http://10.0.3.2/webapp/Current.php";
+        String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
+        String reg2_url = "http://192.168.0.7/webapp/reg2.php";//home ip address
+          String bat_url = "http://192.168.0.7/webapp/Current.php"; //home ip address
+        String teams_url = "http://192.168.0.7/webapp/teams.php"; //for reg2 php
+
+        //********************************************//
+       // String reg_url = "http://10.0.3.2/webapp/register.php";
+       // String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //for reg2 php
+       // String teams_url = "http://10.0.3.2/webapp/teams.php"; //for reg2 php
+        //String login_url = "http://10.0.3.2/webapp/login.php";
+       // String bat_url = "http://10.0.3.2/webapp/Current.php";
+        //********************************************//
         String method = params[0];
         if (method.equals("register")) {
             String id = params[1];
@@ -116,6 +122,48 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
                 return "Match Details Uploaded";
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else if (method.equals("Teams")) {
+            String id = params[1];
+            String type = params[2];
+            String n1 = params[3];
+            String n2 = params[4];
+            String n3 = params[5];
+            String n4 = params[6];
+            String n5 = params[7];
+
+
+
+            try {
+                URL url = new URL(teams_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                //httpURLConnection.setDoInput(true);
+                OutputStream OS = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+                String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
+                        URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8") + "&" +
+                        URLEncoder.encode("n1", "UTF-8") + "=" + URLEncoder.encode(n1, "UTF-8") + "&" +
+                        URLEncoder.encode("n2", "UTF-8") + "=" + URLEncoder.encode(n2, "UTF-8") + "&" +
+                        URLEncoder.encode("n3", "UTF-8") + "=" + URLEncoder.encode(n3, "UTF-8") + "&" +
+                        URLEncoder.encode("n4", "UTF-8") + "=" + URLEncoder.encode(n4, "UTF-8")+ "&" +
+                        URLEncoder.encode("n5", "UTF-8") + "=" + URLEncoder.encode(n5, "UTF-8");
+
+                bufferedWriter.write(data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                OS.close();
+                InputStream IS = httpURLConnection.getInputStream();
+                IS.close();
+                //httpURLConnection.connect();
+                httpURLConnection.disconnect();
+                return "Teams Uploaded";
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
