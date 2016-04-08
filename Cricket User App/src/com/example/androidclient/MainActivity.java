@@ -44,4 +44,11 @@ public class MainActivity extends Activity{
 		BackgroundTask backgroundTask = new BackgroundTask(this);
 		backgroundTask.execute(method,id);
 	}
+	public void Teams(View view)
+	{
+		id = ID.getText().toString();
+		String method = "Teams";
+		BackgroundTask backgroundTask = new BackgroundTask(this);
+		backgroundTask.execute(method,id);
+	}
 }
