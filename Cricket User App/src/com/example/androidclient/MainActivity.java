@@ -51,4 +51,11 @@ public class MainActivity extends Activity{
 		BackgroundTask backgroundTask = new BackgroundTask(this);
 		backgroundTask.execute(method,id);
 	}
+	public void Get_id(View view)
+	{
+		//id = ID.getText().toString();
+		String method = "ID";
+		BackgroundTask backgroundTask = new BackgroundTask(this);
+		backgroundTask.execute(method);
+	}
 }
