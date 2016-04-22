@@ -138,11 +138,13 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         else if (method.equals("Teams")) {
             String id = params[1];
             String type = params[2];
-            String n1 = params[3];
-            String n2 = params[4];
-            String n3 = params[5];
-            String n4 = params[6];
-            String n5 = params[7];
+            String team = params[3];
+            String n1 = params[4];
+            String n2 = params[5];
+            String n3 = params[6];
+            String n4 = params[7];
+            String n5 = params[8];
+
 
 
 
@@ -156,11 +158,13 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
                 String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
                         URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8") + "&" +
+                        URLEncoder.encode("team", "UTF-8") + "=" + URLEncoder.encode(team, "UTF-8")+ "&" +
                         URLEncoder.encode("n1", "UTF-8") + "=" + URLEncoder.encode(n1, "UTF-8") + "&" +
                         URLEncoder.encode("n2", "UTF-8") + "=" + URLEncoder.encode(n2, "UTF-8") + "&" +
                         URLEncoder.encode("n3", "UTF-8") + "=" + URLEncoder.encode(n3, "UTF-8") + "&" +
                         URLEncoder.encode("n4", "UTF-8") + "=" + URLEncoder.encode(n4, "UTF-8")+ "&" +
                         URLEncoder.encode("n5", "UTF-8") + "=" + URLEncoder.encode(n5, "UTF-8");
+                       // URLEncoder.encode("team", "UTF-8") + "=" + URLEncoder.encode(team, "UTF-8");
 
                 bufferedWriter.write(data);
                 bufferedWriter.flush();

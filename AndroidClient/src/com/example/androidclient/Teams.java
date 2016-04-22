@@ -18,14 +18,15 @@ import android.widget.EditText;
  * Created by Sufyan on 08/04/2016.
  */
 public class Teams extends Activity {
-    EditText I,T,p1,p2,p3,p4,p5;
-    String id,type,n1,n2,n3,n4,n5;
+    EditText I,T,Team,p1,p2,p3,p4,p5;
+    String id,type,team,n1,n2,n3,n4,n5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teams);
         I = (EditText)findViewById(R.id.M);
         T = (EditText)findViewById(R.id.type);
+        Team = (EditText)findViewById(R.id.t);
         p1 = (EditText)findViewById(R.id.P1);
         p2 = (EditText)findViewById(R.id.P2);
         p3 = (EditText)findViewById(R.id.P3);
@@ -37,6 +38,7 @@ public class Teams extends Activity {
     {
         id = I.getText().toString();
         type = T.getText().toString();
+        team = Team.getText().toString();
         n1 = p1.getText().toString();
         n2 = p2.getText().toString();
         n3 = p3.getText().toString();
@@ -44,6 +46,6 @@ public class Teams extends Activity {
         n5 = p5.getText().toString();
         String method = "Teams";
         BackgroundTask backgroundTask = new BackgroundTask(this);
-        backgroundTask.execute(method,id,type,n1,n2,n3,n4,n5);
+        backgroundTask.execute(method,id,type,team,n1,n2,n3,n4,n5);
     }
 }

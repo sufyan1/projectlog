@@ -20,6 +20,8 @@
                   android:id="@+id/M" android:layout_marginTop="10dp"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="update type"
                   android:id="@+id/type" android:layout_marginTop="10dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Team name"
+                  android:id="@+id/t" android:layout_marginTop="10dp" android:layout_gravity="left"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Player1"
                   android:id="@+id/P1" android:layout_gravity="center_horizontal" android:layout_marginTop="0dp"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Player2"
