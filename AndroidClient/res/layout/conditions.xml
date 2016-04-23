@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout tools:context="com.easyway2in.mysqlconnect.Register"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+                  android:paddingRight="@dimen/activity_horizontal_margin"
+                  android:paddingTop="@dimen/activity_vertical_margin"
+                  android:paddingBottom="@dimen/activity_vertical_margin" android:orientation="vertical"
+                  android:background="#fffff936" android:weightSum="1" android:layout_gravity="center_horizontal"
+                  android:layout_weight="1.10">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Playing Conditions"
+                  android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
+                  android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:id="@+id/textView8"
+                  android:textColor="#ff000000"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Match Id"
+                  android:id="@+id/M" android:layout_marginTop="30dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="update type"
+                  android:id="@+id/type" android:layout_marginTop="20dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Weather Forcast"
+                  android:id="@+id/w" android:layout_gravity="center_horizontal" android:layout_marginTop="30dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Pitch Type"
+                  android:id="@+id/p" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp"/>
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Name of the Venue"
+                  android:id="@+id/v" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload Conditions"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:onClick="C"
+                android:id="@+id/button3"/>
+    </LinearLayout>
+</LinearLayout>

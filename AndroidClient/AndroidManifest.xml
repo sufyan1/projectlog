@@ -49,6 +49,13 @@
                 android:theme="@android:style/Theme.Translucent.NoTitleBar" >
 
         </activity>
+        <activity
+                android:name=".Playing_Conditions_And_Venue"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+        </activity>
+
+
     </application>
 
 </manifest>

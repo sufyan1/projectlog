@@ -52,6 +52,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
         String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //for reg2 php
         String teams_url = "http://10.0.3.2/webapp/teams.php"; //for reg2 php
         String bat_url = "http://10.0.3.2/webapp/Current.php";
+        String condition_url = "http://10.0.3.2/webapp/Condition.php";
         //String login_url = "http://10.0.3.2/webapp/login.php";
         //********************************************//
         String method = params[0];
@@ -145,9 +146,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             String n4 = params[7];
             String n5 = params[8];
 
-
-
-
             try {
                 URL url = new URL(teams_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -175,6 +173,44 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                 //httpURLConnection.connect();
                 httpURLConnection.disconnect();
                 return "Teams Uploaded";
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else if (method.equals("conditions")) {
+            String id = params[1];
+            String type = params[2];
+            String weather = params[3];
+            String pitch = params[4];
+            String venue = params[5];
+
+
+            try {
+                URL url = new URL(condition_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                //httpURLConnection.setDoInput(true);
+                OutputStream OS = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+                String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
+                        URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8") + "&" +
+                        URLEncoder.encode("weather", "UTF-8") + "=" + URLEncoder.encode(weather, "UTF-8")+ "&" +
+                        URLEncoder.encode("pitch", "UTF-8") + "=" + URLEncoder.encode(pitch, "UTF-8") + "&" +
+                        URLEncoder.encode("venue", "UTF-8") + "=" + URLEncoder.encode(venue, "UTF-8");
+                // URLEncoder.encode("team", "UTF-8") + "=" + URLEncoder.encode(team, "UTF-8");
+
+                bufferedWriter.write(data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                OS.close();
+                InputStream IS = httpURLConnection.getInputStream();
+                IS.close();
+                //httpURLConnection.connect();
+                httpURLConnection.disconnect();
+                return "Playing Condition Uploaded";
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {

@@ -33,7 +33,10 @@ public class Register  extends Activity {
     {
         startActivity(new Intent(this,Teams.class));
     }
-
+    public void Conditions(View view)
+    {
+        startActivity(new Intent(this,Playing_Conditions_And_Venue.class));
+    }
 
 
 

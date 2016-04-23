@@ -16,7 +16,7 @@
                   android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
                   android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
                   android:id="@+id/d" android:textColor="#ff000000"/>
-        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Match number"
+        <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Match Id for Viewers "
                   android:id="@+id/id" android:layout_marginTop="10dp"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="update type"
                   android:id="@+id/type" android:layout_marginTop="10dp"/>

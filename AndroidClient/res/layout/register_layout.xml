@@ -20,6 +20,9 @@
     <Button android:layout_width="141dp" android:layout_height="wrap_content" android:text="Match Details"
             android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="userReg2"
             android:id="@+id/button2" android:layout_weight="0.03"/>
+    <Button android:layout_width="147dp" android:layout_height="wrap_content" android:text="Playing Conditions"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="Conditions"
+            android:id="@+id/button4" android:hint="batsman on crease"/>
     <Button android:layout_width="149dp" android:layout_height="wrap_content" android:text="Teams"
             android:layout_gravity="center_horizontal" android:layout_marginTop="30dp" android:onClick="Teams"
             android:id="@+id/Teams" android:hint="batsman on crease"/>
