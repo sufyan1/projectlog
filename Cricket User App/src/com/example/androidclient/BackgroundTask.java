@@ -38,6 +38,7 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
            String At_Crease = "http://192.168.0.7/webapp/At_Crease.php";//home ip address
           String teams = "http://192.168.0.7/webapp/teams_user.php";//home ip address
           String Match_id = "http://192.168.0.7/webapp/Get_Matches_Id.php";//home ip address
+        String condition = "http://192.168.0.7/webapp/condition_user.php";//home ip address
      //*******************//
    //     String Match_details = "http://192.168.1.3/webapp/Match_details.php"; //home ip address
     //    String login_url = "http://192.168.1.3/webapp/login.php";//home ip address
@@ -166,6 +167,42 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             // String Match = params[1];
             try {
                 URL url = new URL(teams);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+                String data = URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8");
+                //  URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8");
+                bufferedWriter.write(data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1"));
+                String response = "";
+                String line = "";
+                while ((line = bufferedReader.readLine())!=null)
+                {
+                    response+= line;
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return response;
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else if(method.equals("conditions"))
+        {
+            String id = params[1];
+            // String Match = params[1];
+            try {
+                URL url = new URL(condition);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);

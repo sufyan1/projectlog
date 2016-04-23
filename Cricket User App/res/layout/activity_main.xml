@@ -19,7 +19,7 @@
         />
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type Match ID followed By Respective Button for Stats"
               android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
-              android:layout_marginTop="30dp" android:id="@+id/textView"/>
+              android:layout_marginTop="20dp" android:id="@+id/textView"/>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get ID For Live Matches"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Get_id"
             android:id="@+id/button3"/>
@@ -29,23 +29,26 @@
         android:hint="Enter Match ID "
         android:id="@+id/id"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="10dp"
         />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Match Summay"
+    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Match Summay"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="matchLogin"
             android:id="@+id/m_d"/>
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Teams"
+    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Playing Conditions"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Con"
+            android:id="@+id/button4"/>
+    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Teams"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Teams"
             android:id="@+id/button2"/>
     <Button
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Live scores"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:onClick="userLogin"
         />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current Batsman and Bowler"
+    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Current Batsman and Bowler"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Current"
             android:id="@+id/button"/>
 </LinearLayout>
