@@ -15,7 +15,8 @@
                   android:layout_weight="1.33">
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Score Update"
                   android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
-                  android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"/>
+                  android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+                  android:textColor="#ff000000"/>
         <Button android:layout_width="103dp" android:layout_height="wrap_content" android:text="Upload"
                 android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="userReg"/>
         <EditText android:layout_width="250dp" android:layout_height="wrap_content" android:hint="Match id"

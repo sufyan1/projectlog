@@ -17,11 +17,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="0dp"
         />
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type Match ID followed By Respective Button for Stats"
-              android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type Match ID followed By Respective Button for Stats For Teams Type ID Followed by a or b "
+              android:textAppearance="?android:textAppearanceLarge" android:textStyle="normal"
               android:layout_marginTop="10dp" android:id="@+id/textView"/>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get ID For Live Matches"
-            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Get_id"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="0dp" android:onClick="Get_id"
             android:id="@+id/button3"/>
     <EditText
         android:layout_width="250dp"

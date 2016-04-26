@@ -34,25 +34,25 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
 
-      //  String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
-      //  String reg2_url = "http://192.168.0.7/webapp/reg2.php";//home ip address
-      //    String bat_url = "http://192.168.0.7/webapp/Current.php"; //home ip address
-      //  String teams_url = "http://192.168.0.7/webapp/teams.php"; //home ip address
+    //    String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
+    //    String reg2_url = "http://192.168.0.7/webapp/reg2.php";//home ip address
+    //    String bat_url = "http://192.168.0.7/webapp/Current.php"; //home ip address
+    //    String teams_url = "http://192.168.0.7/webapp/teams.php"; //home ip address
+    //    String condition_url = "http://192.168.0.7/webapp/Condition.php";//college ip address
 
-
-       // String reg_url = "http://192.168.1.3/webapp/register.php"; //college ip address
-       // String reg2_url = "http://192.168.1.3/webapp/reg2.php";//college ip address
-       // String bat_url = "http://192.168.1.3/webapp/Current.php"; //college ip address
-       // String teams_url = "http://192.168.1.3/webapp/teams.php"; //college ip address
-
+        String reg_url = "http://192.168.1.4/webapp/register.php"; //college ip address
+        String reg2_url = "http://192.168.1.4/webapp/reg2.php";//college ip address
+        String bat_url = "http://192.168.1.4/webapp/Current.php"; //college ip address
+        String teams_url = "http://192.168.1.4/webapp/teams.php"; //college ip address
+        String condition_url = "http://192.168.1.4/webapp/Condition.php";//college ip address
         //********************************************//
      /*These are the urls which is the ip address of local host followed by the folder in which php script saved for
        connection to datbase */
-        String reg_url = "http://10.0.3.2/webapp/register.php";//geny motion ip address
-        String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //geny motion ip address
-        String teams_url = "http://10.0.3.2/webapp/teams.php"; //geny motion ip address
-        String bat_url = "http://10.0.3.2/webapp/Current.php";//geny motion ip address
-        String condition_url = "http://10.0.3.2/webapp/Condition.php";//geny motion ip address
+     //   String reg_url = "http://10.0.3.2/webapp/register.php";//geny motion ip address
+     //   String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //geny motion ip address
+     //   String teams_url = "http://10.0.3.2/webapp/teams.php"; //geny motion ip address
+     //   String bat_url = "http://10.0.3.2/webapp/Current.php";//geny motion ip address
+     //   String condition_url = "http://10.0.3.2/webapp/Condition.php";//geny motion ip address
 
         //********************************************//
         // params are the parameters of the function
