@@ -15,11 +15,11 @@
         android:textAppearance="?android:textAppearanceLarge"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         />
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type Match ID followed By Respective Button for Stats"
               android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold"
-              android:layout_marginTop="20dp" android:id="@+id/textView"/>
+              android:layout_marginTop="10dp" android:id="@+id/textView"/>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get ID For Live Matches"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Get_id"
             android:id="@+id/button3"/>
@@ -32,7 +32,7 @@
         android:layout_marginTop="10dp"
         />
     <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Match Summay"
-            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="matchLogin"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="0dp" android:onClick="matchLogin"
             android:id="@+id/m_d"/>
     <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Playing Conditions"
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Con"
@@ -48,7 +48,7 @@
         android:layout_marginTop="10dp"
         android:onClick="userLogin"
         />
-    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Current Batsman and Bowler"
+    <Button android:layout_width="150dp" android:layout_height="wrap_content" android:text="Current Batsman "
             android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:onClick="Current"
             android:id="@+id/button"/>
 </LinearLayout>

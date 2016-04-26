@@ -34,23 +34,25 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     @Override
     protected String doInBackground(String... params) {
         String Match_details = "http://192.168.0.7/webapp/Match_details.php"; //home ip address
-            String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
-           String At_Crease = "http://192.168.0.7/webapp/At_Crease.php";//home ip address
-          String teams = "http://192.168.0.7/webapp/teams_user.php";//home ip address
-          String Match_id = "http://192.168.0.7/webapp/Get_Matches_Id.php";//home ip address
+        String login_url = "http://192.168.0.7/webapp/login.php";//home ip address
+        String At_Crease = "http://192.168.0.7/webapp/At_Crease.php";//home ip address
+        String teams = "http://192.168.0.7/webapp/teams_user.php";//home ip address
+        String Match_id = "http://192.168.0.7/webapp/Get_Matches_Id.php";//home ip address
         String condition = "http://192.168.0.7/webapp/condition_user.php";//home ip address
      //*******************//
-   //     String Match_details = "http://192.168.1.3/webapp/Match_details.php"; //home ip address
-    //    String login_url = "http://192.168.1.3/webapp/login.php";//home ip address
-     //   String At_Crease = "http://192.168.1.3/webapp/At_Crease.php";//home ip address
-      //  String teams = "http://192.168.1.3/webapp/teams_user.php";//home ip address
-      //  String Match_id = "http://192.168.1.3/webapp/Get_Matches_Id.php";//home ip address
+         // String Match_details = "http://192.168.1.3/webapp/Match_details.php"; //college ip address
+         // String login_url = "http://192.168.1.3/webapp/login.php";//college ip addres
+        //  String At_Crease = "http://192.168.1.3/webapp/At_Crease.php";//college ip address
+        //  String teams = "http://192.168.1.3/webapp/teams_user.php";//college ip address
+       //   String Match_id = "http://192.168.1.3/webapp/Get_Matches_Id.php";//college ip address
+      //    String condition = "http://192.168.0.7/webapp/condition_user.php";//home ip address
         //***************************************************//
-  //      String Match_details = "http://10.0.3.2/webapp/Match_details.php"; //for reg2 php
-  //      String login_url = "http://10.0.3.2/webapp/login.php";
-  //      String At_Crease = "http://10.0.3.2/webapp/At_Crease.php";
-  //      String teams = "http://10.0.3.2/webapp/teams_user.php";//home ip address
-  //      String Match_id = "http://10.0.3.2/webapp/Get_Matches_Id.php";//home ip address
+
+  //      String Match_details = "http://10.0.3.2/webapp/Match_details.php"; //geny motion ip address
+  //      String login_url = "http://10.0.3.2/webapp/login.php";//geny motion ip address
+  //      String At_Crease = "http://10.0.3.2/webapp/At_Crease.php";//geny motion ip address
+  //      String teams = "http://10.0.3.2/webapp/teams_user.php";//geny motion ip address
+  //      String Match_id = "http://10.0.3.2/webapp/Get_Matches_Id.php";//geny motion ip address
         String method = params[0];
 
         if(method.equals("login"))

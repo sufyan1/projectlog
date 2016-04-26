@@ -1,9 +1,5 @@
 package com.example.androidclient;
 
-/**
- * Created by Sufyan on 4/8/2016.
- */
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

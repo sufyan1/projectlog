@@ -18,9 +18,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-/**
- * Created by prabeesh on 7/14/2015.
- */
+
 public class BackgroundTask extends AsyncTask<String,Void,String> {
     AlertDialog alertDialog;
     Context ctx;
@@ -35,26 +33,29 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     }
     @Override
     protected String doInBackground(String... params) {
+
       //  String reg_url = "http://192.168.0.7/webapp/register.php"; //home ip address
       //  String reg2_url = "http://192.168.0.7/webapp/reg2.php";//home ip address
       //    String bat_url = "http://192.168.0.7/webapp/Current.php"; //home ip address
-      //  String teams_url = "http://192.168.0.7/webapp/teams.php"; //for reg2 php
+      //  String teams_url = "http://192.168.0.7/webapp/teams.php"; //home ip address
 
 
-
-       // String reg_url = "http://192.168.1.3/webapp/register.php"; //home ip address
-       // String reg2_url = "http://192.168.1.3/webapp/reg2.php";//home ip address
-       // String bat_url = "http://192.168.1.3/webapp/Current.php"; //home ip address
-       // String teams_url = "http://192.168.1.3/webapp/teams.php"; //for reg2 php
+       // String reg_url = "http://192.168.1.3/webapp/register.php"; //college ip address
+       // String reg2_url = "http://192.168.1.3/webapp/reg2.php";//college ip address
+       // String bat_url = "http://192.168.1.3/webapp/Current.php"; //college ip address
+       // String teams_url = "http://192.168.1.3/webapp/teams.php"; //college ip address
 
         //********************************************//
-        String reg_url = "http://10.0.3.2/webapp/register.php";
-        String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //for reg2 php
-        String teams_url = "http://10.0.3.2/webapp/teams.php"; //for reg2 php
-        String bat_url = "http://10.0.3.2/webapp/Current.php";
-        String condition_url = "http://10.0.3.2/webapp/Condition.php";
-        //String login_url = "http://10.0.3.2/webapp/login.php";
+     /*These are the urls which is the ip address of local host followed by the folder in which php script saved for
+       connection to datbase */
+        String reg_url = "http://10.0.3.2/webapp/register.php";//geny motion ip address
+        String reg2_url = "http://10.0.3.2/webapp/reg2.php"; //geny motion ip address
+        String teams_url = "http://10.0.3.2/webapp/teams.php"; //geny motion ip address
+        String bat_url = "http://10.0.3.2/webapp/Current.php";//geny motion ip address
+        String condition_url = "http://10.0.3.2/webapp/Condition.php";//geny motion ip address
+
         //********************************************//
+        // params are the parameters of the function
         String method = params[0];
         if (method.equals("register")) {
             String id = params[1];
@@ -65,24 +66,33 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
             String Totalovers = params[6];
             String type = params[7];
             try {
+                //creates a url object
                 URL url = new URL(reg_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                //set post as a request method
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
-                //httpURLConnection.setDoInput(true);
+                //create os obj
                 OutputStream OS = httpURLConnection.getOutputStream();
+                // pass output stream object to buffered writer
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
+                //store all the data in a string and pass string to buffered writer
                 String data = URLEncoder.encode("id", "UTF-8") + "=" + URLEncoder.encode(id, "UTF-8") + "&" +
                         URLEncoder.encode("user", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
                         URLEncoder.encode("team_score", "UTF-8") + "=" + URLEncoder.encode(team_score, "UTF-8") + "&" +
                         URLEncoder.encode("team_wickets", "UTF-8") + "=" + URLEncoder.encode(team_wickets, "UTF-8") + "&" +
                         URLEncoder.encode("Get_overs", "UTF-8") + "=" + URLEncoder.encode(Get_overs, "UTF-8") + "&" +
-                URLEncoder.encode("Totalovers", "UTF-8") + "=" + URLEncoder.encode(Totalovers, "UTF-8")+ "&" +
-                URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8");
+                        URLEncoder.encode("Totalovers", "UTF-8") + "=" + URLEncoder.encode(Totalovers, "UTF-8")+ "&" +
+                        URLEncoder.encode("type", "UTF-8") + "=" + URLEncoder.encode(type, "UTF-8");
+                //pass data string to buffered writter
                 bufferedWriter.write(data);
+               //flush the bufferd writer
                 bufferedWriter.flush();
+                //close buffered writer
                 bufferedWriter.close();
+                //close outputstream
                 OS.close();
+                //create object for inputsream
                 InputStream IS = httpURLConnection.getInputStream();
                 IS.close();
                 //httpURLConnection.connect();

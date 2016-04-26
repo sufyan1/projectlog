@@ -10,7 +10,9 @@ import android.widget.EditText;
  * Created by Sufyan on 3/2/2016.
  */
 public class Current_BB extends Activity{
+    //edit text varaibles
     EditText id,batsman,bowler,type;
+    //String variables
     String Match_id,Bat,bowl,match_type;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,11 @@ public class Current_BB extends Activity{
         Bat = batsman.getText().toString();
         bowl = bowler.getText().toString();
         match_type = type.getText().toString();
+        //Name of the String Method
         String method = "Current";
+        //create an object of a background task
         BackgroundTask backgroundTask = new BackgroundTask(this);
+        //Pass the arguments to the object for sending it to database
         backgroundTask.execute(method,Match_id,Bat,bowl,match_type);
     }
 }

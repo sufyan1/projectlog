@@ -12,16 +12,16 @@ package com.example.androidclient;
 		import android.widget.EditText;
 public class MainActivity extends Activity{
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
 	}
+	//Main activity starts another activity via intent
 	public void userReg(View view)
 	{
 		startActivity(new Intent(this,Register.class));
 	}
-
 
 }
